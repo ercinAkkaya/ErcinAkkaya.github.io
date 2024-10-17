@@ -23,3 +23,11 @@ body {
     margin-top: 10px;
     font-size: 1.2em; /* Increase font size */
 }
+
+.technologies-used {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #555;
+    list-style-type: disc;
+    padding-left: 20px;
+}
