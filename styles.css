@@ -1,33 +1,158 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
     line-height: 1.6;
+    background-color: #f5f5f5; /* Kırık beyaz arka plan rengi */
 }
 
 .header {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 0;
+    background-color: #6aeeff;
+    height: 100vh; /* Arka planın yüksekliğini ekranın tamamı yaptık */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* İçeriği dikey olarak ortaladık */
+    align-items: center; /* Yatay olarak ortaladık */
+    padding: 0; /* Header içindeki padding'i sıfırladık */
 }
 
-.pdf-container {
-    margin-bottom: 20px;
+.profile-container {
+    display: flex;
+    align-items: center;
 }
 
-.pdf-viewer {
-    width: 100%;
-    height: 500px;
-    border: 1px solid #ccc;
+.profile-picture {
+    width: 350px;
+    height: 450px;
+    border-radius: 40%; /* Yuvarlak şekil verdik */
+    margin-right: 50px; /* Sağ tarafa boşluk ekledik */
 }
 
-.project-link {
-    margin-top: 10px;
-    font-size: 1.2em; /* Increase font size */
+.profile-text {
+    text-align: left;
 }
 
-.technologies-used {
-    margin-top: 5px;
-    font-size: 1em;
-    color: #555;
-    list-style-type: disc;
-    padding-left: 20px;
+.header h1, .header h3 {
+    background-color: #6aeeff;
+    margin: 0;
+    color: white; /* Yazı rengini beyaz yaptık */
+    font-family: 'Raleway Dots', sans-serif; /* Raleway Dots fontunu kullandık */
+}
+
+.header h1 {
+    font-size: 6em; /* Font boyutunu büyüttük */
+}
+
+.header h3 {
+    font-size: 5em; /* Font boyutunu büyüttük */
+}
+
+.projects-button {
+    margin-top: 20px; /* Buton ile yazılar arasında boşluk ekledik */
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin-top: 40px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 16px; /* Butona radius verdik */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Link alt çizgisini kaldırdık */
+}
+
+.projects-button:hover {
+    background-color: #0056b3; /* Hover durumunda arka plan rengini değiştirdik */
+}
+
+.content {
+    padding: 20px; /* İçeriğe padding ekledik */
+}
+
+.photos-wrapper {
+    display: flex;
+    justify-content: center; /* Yatayda ortaladık */
+    gap: 20px; /* Aralarına boşluk ekledik */
+}
+
+.project-group {
+    flex: 1;
+    margin: 0 50px;
+}
+
+.photos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.photos-container img {
+    width: 550px; /* Genişliği artırdık */
+    height: 450px; /* Yüksekliği sabit tuttuk */
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    font-family: 'Raleway Dots', sans-serif; /* Üstteki başlıkla aynı fontu kullandık */
+    font-size: 5em; /* Font boyutunu artırdık */
+    color: #333; /* Yazı rengini belirledik */
+    text-align: center; /* Ortaladık */
+    margin-top: 40px; /* Üstten boşluk bıraktık */
+    font-weight: 800;
+}
+
+.project-link, .project-description {
+    font-family: Arial, sans-serif; /* Yazı fontunu düzenledik */
+    font-size: 1.2em; /* Font boyutunu düzenledik */
+    color: #333; /* Yazı rengini belirledik */
+    margin-top: 10px; /* Üstten boşluk bıraktık */
+    padding-right: 20px; /* Sağdan boşluk bıraktık */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+h3 {
+    font-size: 3em;
 }

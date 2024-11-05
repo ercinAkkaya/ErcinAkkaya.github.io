@@ -8,43 +8,75 @@
 </head>
 <body>
     <div class="header">
-        <h1>Ali Erçin Akkaya</h1>
-        <h3>Android - Mobile Developer</h3>
+        <div class="profile-container">
+            <img src="photos/ben.jpg" alt="Profile Picture" class="profile-picture">
+            <div class="profile-text">
+                <h1>Ali Erçin Akkaya</h1>
+                <h3>Android - Mobile Developer</h3>
+            </div>
+        </div>
+        <a href="#projects-section" class="projects-button">Projects</a>
     </div>
-    <h2>Projects</h2>
-    
-    <div class="pdf-container">
-        <iframe class="pdf-viewer" src="MealPlanner.pdf" title="Meal Planner Uygulaması"></iframe>
+    <div class="content">
+        <h2 id="projects-section">Projects</h2>
+        <div class="photos-wrapper">
+            <div class="project-group">
+                <h3>Meal Planner</h3>
+                <div class="photos-container">
+                    <img src="photos/mp1.png" alt="MP 1" id="mp1" onclick="showMoreMP()">
+                    <img src="photos/mp2.png" alt="MP 2" class="hidden mp">
+                    <img src="photos/mp3.png" alt="MP 3" class="hidden mp">
+                    <img src="photos/mp4.png" alt="MP 4" class="hidden mp">
+                </div>
+                <p class="project-link">Google Play link: <a href="https://play.google.com/store/apps/details?id=com.Meal_Planner&pcampaignid=web_share" target="_blank">Buradan ulaşabilirsiniz</a></p>
+                <p class="project-description">Meal Planner uygulaması, kullanıcıların günlük ve haftalık yemek planlarını kolayca oluşturmasını sağlar. Bu uygulama sayesinde kullanıcılar, sağlıklı ve dengeli öğünler hazırlamak için çeşitli tarif önerileri alabilir, malzeme listesi oluşturabilir ve yemeklerini düzenli bir şekilde planlayabilirler. Ayrıca, uygulama içinde kullanılan favori tarifler ve alışveriş listesi özellikleri ile yemek hazırlık sürecini hızlandırıp kolaylaştırmak hedeflenmiştir.</p>
+                <h4>Kullanılan Teknolojiler:</h4>
+                <ul class="technologies-used">
+                    <li>Kotlin</li>
+                    <li>Jetpack Compose</li>
+                    <li>ModelView</li>
+                    <li>Retrofit</li>
+                    <li>MVVM</li>
+                    <li>LiveData</li>
+                    <li>Coroutines</li>
+                    <li>Navigation</li>
+                    <li>Hilt</li>
+                    <li>Dagger</li>
+                </ul>
+            </div>
+            <div class="project-group">
+                <h3>Coffee App</h3>
+                <div class="photos-container">
+                    <img src="photos/diablo1.png" alt="Diablo 1" id="diablo1" onclick="showMoreDiablo()">
+                    <img src="photos/diablo2.png" alt="Diablo 2" class="hidden diablo">
+                    <img src="photos/diablo3.png" alt="Diablo 3" class="hidden diablo">
+                    <img src="photos/diablo4.png" alt="Diablo 4" class="hidden diablo">
+                </div>
+                <p class="project-link">Google Play link: <a href="https://play.google.com/store/apps/details?id=com.ercin.socialmediaclone&pcampaignid=web_share" target="_blank">Buradan ulaşabilirsiniz.</a></p>
+                <p class="project-description">"Coffee App," kullanıcıların bir kafeye dair ihtiyaç duyabilecekleri tüm bilgilere ulaşabildiği, kolayca kullanabilecekleri bir platformdur. Uygulama üzerinden kullanıcılar, kafenin menüsüne göz atabilir, mevcut şubeleri görüntüleyebilir ve ana sayfadaki güncel paylaşımları inceleyebilir. Kahve aldıkça puan biriktirip bu puanlarla ücretsiz kahve kazanma imkanı sunan sistem, kullanıcı deneyimini daha eğlenceli hale getirir. Aynı zamanda, uygulamadaki içerikler bir admin paneli üzerinden güncellenebilir, böylece menü, şube bilgileri ve gönderiler gibi özellikler kolayca yönetilebilir. Coffee App, kahve severlerin ihtiyaçlarına modern bir çözüm sunarak her gün kahve deneyimlerini bir üst seviyeye taşır.</p>
+                <h4>Kullanılan Teknolojiler:</h4>
+                <ul class="technologies-used">
+                    <li>Kotlin</li>
+                    <li>Jetpack Compose</li>
+                    <li>ModelView</li>
+                    <li>Retrofit</li>
+                    <li>MVVM</li>
+                    <li>LiveData</li>
+                    <li>Coroutines</li>
+                    <li>Navigation</li>
+                    <li>Hilt</li>
+                    <li>Dagger</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <p class="project-link">Google Play link: <a href="https://play.google.com/store/apps/details?id=com.Meal_Planner&pcampaignid=web_share" target="_blank">Buradan ulaşabilirsiniz</a></p>
-    <h3>Kullanılan Teknolojiler:</h3>
-    <ul class="technologies-used">
-        <li>Kotlin</li>
-        <li>Jetpack Compose</li>
-        <li>ModelView</li>
-        <li>Retrofit</li>
-        <li>MVVM</li>
-        <li>LiveData</li>
-        <li>Coroutines</li>
-        <li>Navigation</li>
-        <li>Hilt</li>
-        <li>Dagger</li>
-    </ul>
 
-    <div class="pdf-container">
-        <iframe class="pdf-viewer" src="coffeeApp.pdf" title="Coffee App Uygulaması"></iframe>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content" id="modal-content"></div>
     </div>
-    <p class="project-link">Google Play link: <a href="https://play.google.com/store/apps/details?id=com.ercin.socialmediaclone&pcampaignid=web_share" target="_blank">Buradan ulaşabilirsiniz.</a></p>
-    <h3>Kullanılan Teknolojiler:</h3>
-    <ul class="technologies-used">
-        <li>Kotlin</li>
-        <li>XML</li>
-        <li>ModelView</li>
-        <li>Retrofit</li>
-        <li>LiveData</li>
-        <li>Coroutines</li>
-        <li>Hilt</li>
-        <li>Dagger</li>
-    </ul>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
