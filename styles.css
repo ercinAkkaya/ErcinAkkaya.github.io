@@ -74,6 +74,7 @@ body {
     display: flex;
     justify-content: center; /* Yatayda ortaladık */
     gap: 20px; /* Aralarına boşluk ekledik */
+    flex-direction: column;
 }
 
 .project-group {
@@ -89,7 +90,7 @@ body {
 }
 
 .photos-container img {
-    width: 550px; /* Genişliği artırdık */
+    width: 650px; /* Genişliği artırdık */
     height: 450px; /* Yüksekliği sabit tuttuk */
     border-radius: 10px;
 }
