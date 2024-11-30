@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
     <title>Portfolyo</title>
 </head>
 <body>
@@ -11,11 +17,34 @@
         <div class="profile-container">
             <img src="photos/ben.jpg" alt="Profile Picture" class="profile-picture">
             <div class="profile-text">
+                <h3>I'm</h3>
                 <h1>Ali Erçin Akkaya</h1>
                 <h3>Android - Mobile Developer</h3>
             </div>
         </div>
-        <a href="#projects-section" class="projects-button">Projects</a>
+        <div style="display: flex; gap: 40px;">
+            <a href="#about-section" class="projects-button">About Me</a>
+            <a href="#projects-section" class="projects-button">Projects</a>
+        </div>
+        
+    </div>
+    <div class="about">
+        <h2 id="about-section">ABOUT ME</h2>
+        <div class="about-wrapper">
+            <div class="about-group">
+                <div class="about-container">
+                    <img src="photos/ben.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="about-text">
+                        <h3>Android - Mobile Developer</h3>
+                        <p>I’m Ali Erçin Akkaya, a Computer Engineering graduate from İzmir Bakırçay University. I have over two years of experience developing Android applications, specializing in Java and Kotlin. I work with modern tools such as Jetpack Compose, MVVM architecture, Retrofit, Hilt, and Firebase to create user-friendly and high-performance applications.
+                            <p>I am also focusing on mastering clean architecture and modular design to build scalable, maintainable, and efficient codebases. I thrive in team environments, enjoy collaborating toward shared goals, and excel at quickly learning and implementing new technologies. My portfolio includes published apps on the Google Play Store and projects where I’ve taken on leadership roles. My mission is to deliver innovative and reliable solutions that make users' lives easier.</p>
+                            <p>I have in-depth experience in developing cross-platform applications with Flutter. I have effectively used Flutter to create high-performance and user-friendly applications for both Android and iOS platforms. By successfully applying modern Flutter techniques such as BLoC, Cubit, and State Management, I have optimized in-app data management and user interaction. Additionally, I have developed flexible and sustainable solutions tailored to users' needs through API integration and customized UI/UX designs. In my Flutter projects, I follow best practices to ensure a consistent and efficient user experience across both platforms.</p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </div>
     </div>
     <div class="content">
         <h2 id="projects-section">Projects</h2>
@@ -28,9 +57,9 @@
                     <img src="photos/mp3.PNG" alt="MP 3" class="hidden mp">
                     <img src="photos/mp4.PNG" alt="MP 4" class="hidden mp">
                 </div>
-                <p class="project-link">Google Play link: <a href="https://play.google.com/store/apps/details?id=com.Meal_Planner&pcampaignid=web_share" target="_blank">Buradan ulaşabilirsiniz</a></p>
-                <p class="project-description">Meal Planner uygulaması, kullanıcıların günlük ve haftalık yemek planlarını kolayca oluşturmasını sağlar. Bu uygulama sayesinde kullanıcılar, sağlıklı ve dengeli öğünler hazırlamak için çeşitli tarif önerileri alabilir, malzeme listesi oluşturabilir ve yemeklerini düzenli bir şekilde planlayabilirler. Ayrıca, uygulama içinde kullanılan favori tarifler ve alışveriş listesi özellikleri ile yemek hazırlık sürecini hızlandırıp kolaylaştırmak hedeflenmiştir.</p>
-                <h4>Kullanılan Teknolojiler:</h4>
+                <p class="project-link">Google Play link: <a href="https://play.google.com/store/apps/details?id=com.Meal_Planner&pcampaignid=web_share" target="_blank">From Here</a></p>
+                <p class="project-description">The Meal Planner application allows users to easily create daily and weekly meal plans. With this app, users can receive various recipe suggestions to prepare healthy and balanced meals, create ingredient lists, and organize their meals in a structured way. Additionally, the app includes features like favorite recipes and shopping lists, aiming to speed up and simplify the meal preparation process.</p>
+                <h4>Technologies Used:</h4>
                 <ul class="technologies-used">
                     <li>Kotlin</li>
                     <li>Jetpack Compose</li>
@@ -52,9 +81,9 @@
                     <img src="photos/diablo3.PNG" alt="Diablo 3" class="hidden diablo">
                     <img src="photos/diablo4.PNG" alt="Diablo 4" class="hidden diablo">
                 </div>
-                <p class="project-link">Google Play link: <a href="https://play.google.com/store/apps/details?id=com.ercin.socialmediaclone&pcampaignid=web_share" target="_blank">Buradan ulaşabilirsiniz.</a></p>
-                <p class="project-description">"Coffee App," kullanıcıların bir kafeye dair ihtiyaç duyabilecekleri tüm bilgilere ulaşabildiği, kolayca kullanabilecekleri bir platformdur. Uygulama üzerinden kullanıcılar, kafenin menüsüne göz atabilir, mevcut şubeleri görüntüleyebilir ve ana sayfadaki güncel paylaşımları inceleyebilir. Kahve aldıkça puan biriktirip bu puanlarla ücretsiz kahve kazanma imkanı sunan sistem, kullanıcı deneyimini daha eğlenceli hale getirir. Aynı zamanda, uygulamadaki içerikler bir admin paneli üzerinden güncellenebilir, böylece menü, şube bilgileri ve gönderiler gibi özellikler kolayca yönetilebilir. Coffee App, kahve severlerin ihtiyaçlarına modern bir çözüm sunarak her gün kahve deneyimlerini bir üst seviyeye taşır.</p>
-                <h4>Kullanılan Teknolojiler:</h4>
+                <p class="project-link">Google Play link: <a href="https://play.google.com/store/apps/details?id=com.ercin.socialmediaclone&pcampaignid=web_share" target="_blank">From Here</a></p>
+                <p class="project-description">"Coffee App" is a platform where users can access all the information they need about a café in an easy-to-use format. Through the app, users can browse the café's menu, view existing branches, and check out the latest posts on the homepage. The system, which allows users to collect points with every coffee purchase and redeem those points for free coffee, makes the user experience more enjoyable. Additionally, the app's content can be updated through an admin panel, making it easy to manage features such as the menu, branch information, and posts. Coffee App provides a modern solution to the needs of coffee lovers, elevating their coffee experience to the next level every day.</p>
+                <h4>Technologies Used:</h4>
                 <ul class="technologies-used">
                     <li>Kotlin</li>
                     <li>Jetpack Compose</li>
@@ -73,9 +102,9 @@
                 <div class="photos-container">
                     <img src="photos/pixlPhoto.png" alt="PL 1" id="pl1">
                 </div>
-                <p class="project-link">Çok Yakında Yayında</a></p>
-                <p class="project-description">PixL, kullanıcıların hayal gücünü gerçeğe dönüştürmelerine olanak tanıyan bir yapay zeka destekli görüntü oluşturma uygulamasıdır. Kullanıcılar, sadece birkaç kelimeyle hayallerindeki tasarımları tanımlayarak benzersiz ve yaratıcı görseller oluşturabilirler. PixL, geniş bir sanat stili yelpazesi ve özelleştirme seçenekleri sunarak her kullanıcının ihtiyaçlarına uygun kişiselleştirilmiş bir deneyim sağlar. İlham veren, yaratıcı içerikler hazırlamak veya sanatsal projelerinizi bir sonraki seviyeye taşımak için PixL'i kullanarak sınırsız yaratıcılığın keyfini çıkarabilirsiniz!</p>
-                <h4>Kullanılan Teknolojiler:</h4>
+                <p class="project-link">Coming Soon to Google Play </a></p>
+                <p class="project-description">PixL is an AI-powered image generation app that allows users to turn their imagination into reality. By simply describing their dream designs with a few words, users can create unique and creative visuals. PixL offers a wide range of art styles and customization options, providing a personalized experience tailored to each user's needs. Whether you're looking to create inspiring, creative content or take your artistic projects to the next level, PixL lets you enjoy limitless creativity!</p>
+                <h4>Technologies Used:</h4>
                 <ul class="technologies-used">
                     <li>Kotlin</li>
                     <li>Jetpack Compose</li>
@@ -101,6 +130,9 @@
         <div class="modal-content" id="modal-content"></div>
     </div>
 
+    <footer>
+        <p>© 2024 Ali Erçin Akkaya</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
