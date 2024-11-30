@@ -82,7 +82,7 @@ body {
     font-family: 'Inconsolata', sans-serif; 
     font-size: 6em; /* Font boyutunu büyüttük */
     margin-bottom: 40px;
-}
+} 
 
 .about-group {
     flex: 1;
