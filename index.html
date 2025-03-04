@@ -3,136 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Erçin Akkaya - Mobile Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-    <title>Portfolyo</title>
 </head>
 <body>
-    <div class="header">
-        <div class="profile-container">
-            <img src="photos/ben.jpg" alt="Profile Picture" class="profile-picture">
-            <div class="profile-text">
-                <h3>I'm</h3>
-                <h1>Ali Erçin Akkaya</h1>
-                <h3>Android - Mobile Developer</h3>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AEA</a>
+            <div class="nav-links">
+                <a href="#work">Projelerim</a>
+                <a href="#about">Hakkımda</a>
+                <a href="#contact">İletişim</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Mobil Deneyimleri<br>Yeniden Tasarlıyorum</h1>
+                <p>Android ve Flutter ile kullanıcı odaklı mobil uygulamalar geliştiriyorum.</p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn-primary">Projelerimi Gör</a>
+                    <a href="#contact" class="btn-secondary">İletişime Geç</a>
+                </div>
             </div>
         </div>
-        <div style="display: flex; gap: 40px;">
-            <a href="#about-section" class="projects-button">About Me</a>
-            <a href="#projects-section" class="projects-button">Projects</a>
-        </div>
-        
-    </div>
-    <div class="about">
-        <h2 id="about-section">ABOUT ME</h2>
-        <div class="about-wrapper">
-            <div class="about-group">
-                <div class="about-container">
-                    <img src="photos/ben.jpg" alt="Profile Picture" class="profile-picture">
-                    <div class="about-text">
-                        <h3>Android - Mobile Developer</h3>
-                        <p>I’m Ali Erçin Akkaya, a Computer Engineering graduate from İzmir Bakırçay University. I have over two years of experience developing Android applications, specializing in Java and Kotlin. I work with modern tools such as Jetpack Compose, MVVM architecture, Retrofit, Hilt, and Firebase to create user-friendly and high-performance applications.
-                            <p>I am also focusing on mastering clean architecture and modular design to build scalable, maintainable, and efficient codebases. I thrive in team environments, enjoy collaborating toward shared goals, and excel at quickly learning and implementing new technologies. My portfolio includes published apps on the Google Play Store and projects where I’ve taken on leadership roles. My mission is to deliver innovative and reliable solutions that make users' lives easier.</p>
-                            <p>I have in-depth experience in developing cross-platform applications with Flutter. I have effectively used Flutter to create high-performance and user-friendly applications for both Android and iOS platforms. By successfully applying modern Flutter techniques such as BLoC, Cubit, and State Management, I have optimized in-app data management and user interaction. Additionally, I have developed flexible and sustainable solutions tailored to users' needs through API integration and customized UI/UX designs. In my Flutter projects, I follow best practices to ensure a consistent and efficient user experience across both platforms.</p>
+    </header>
 
-                        </p>
+    <section id="work" class="work">
+        <div class="container">
+            <h2>Projelerim</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="photos/mp1.png" alt="Meal Planner App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Meal Planner</h3>
+                        <p>Sağlıklı beslenme alışkanlıkları için akıllı beslenme asistanı. Kalori takibi, öğün planlaması ve besin değeri analizi yapabilirsiniz.</p>
+                        <div class="tech-tags">
+                            <span>Kotlin</span>
+                            <span>Jetpack Compose</span>
+                            <span>Material 3</span>
+                            <span>Coroutines</span>
+                            <span>Room DB</span>
+                            <span>Retrofit</span>
+                            <span>Dagger Hilt</span>
+                            <span>OkHttp</span>
+                        </div>
+                        <div class="store-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.Meal_Planner&pcampaignid=web_share" class="store-link">
+                                <i class="fab fa-google-play"></i>
+                                <span>Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="photos/pixlPhoto.png" alt="PixL AI Image Generator">
+                    </div>
+                    <div class="project-content">
+                        <h3>Pixl</h3>
+                        <p>Yapay zeka destekli fotoğraf üretme uygulaması. Text-to-image teknolojisi ile metinlerinizi etkileyici görsellere dönüştürün.</p>
+                        <div class="tech-tags">
+                            <span>Kotlin</span>
+                            <span>Jetpack Compose</span>
+                            <span>OpenAI API</span>
+                            <span>Coroutines Flow</span>
+                            <span>Retrofit</span>
+                            <span>Firebase</span>
+                            <span>In-App Purchase</span>
+                        </div>
+                        <div class="store-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.appistry.pixl&pcampaignid=web_share" class="store-link">
+                                <i class="fab fa-google-play"></i>
+                                <span>Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="photos/diablo1.PNG" alt="Diablo Coffee Loyalty App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Diablo</h3>
+                        <p>Kahve dükkanı sadakat uygulaması. Puan biriktirme, özel kampanyalar ve dijital kahve pasaportu özellikleri ile müşteri deneyimini zenginleştirin.</p>
+                        <div class="tech-tags">
+                            <span>Kotlin</span>
+                            <span>XML Layout</span>
+                            <span>View Binding</span>
+                            <span>MVVM</span>
+                            <span>Firebase Auth</span>
+                            <span>Coroutines</span>
+                            <span>DataStore</span>
+                            <span>Dagger Hilt</span>
+                            <span>Google Maps</span>
+                        </div>
+                        <div class="store-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.ercin.socialmediaclone&pcampaignid=web_share" class="store-link">
+                                <i class="fab fa-google-play"></i>
+                                <span>Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="photos/eos_photo.png" alt="EOS - Eğitim Otomasyon Sistemi">
+                    </div>
+                    <div class="project-content">
+                        <h3>EOS - Eğitim Otomasyon Sistemi</h3>
+                        <p>Bu uygulama, öğrencilerin akademik süreçlerini daha verimli yönetmek için geliştirilmiş bir mobil platformdur. Öğretmenler, öğrencilerin bilgilerini kaydedebilir, notlarını ve gelişimlerini takip edebilir. Uygulama, Firebase altyapısı ile güvenli veri saklama ve gerçek zamanlı güncelleme imkanı sunar. Kullanıcı dostu arayüzü sayesinde kolay kullanım sağlar ve eğitim sürecini dijitalleştirerek takip etmeyi daha pratik hale getirir.</p>
+                        <div class="tech-tags">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>BLoC Pattern</span>
+                            <span>Cloud Firestore</span>
+                            <span>Firebase Auth</span>
+                            <span>Provider</span>
+                            <span>Dio</span>
+                        </div>
+                        <div class="store-links">
+                            <a href="https://eos-google-play-link" class="store-link">
+                                <i class="fab fa-google-play"></i>
+                                <span>Google Play</span>
+                            </a>
+                            <a href="https://eos-app-store-link" class="store-link">
+                                <i class="fab fa-app-store-ios"></i>
+                                <span>App Store</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="photos/mecan_photo.png" alt="Mecan App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Mecan App</h3>
+                        <p>Sosyal etkinlikleri bir araya toplayan ve kullanıcıların kolayca etkinlik bulmasını sağlayan modern bir mobil uygulama. Kullanıcılar kendi etkinliklerini oluşturabilir, mevcut etkinliklere katılabilir ve etkinlik organizatörleriyle iletişime geçebilir. Harita üzerinden yakındaki etkinlikleri keşfedebilir, kategorilere göre filtreleme yapabilir ve favori etkinliklerini kaydedebilirler.</p>
+                        <div class="tech-tags">
+                            <span>Kotlin</span>
+                            <span>Jetpack Compose</span>
+                            <span>Material 3</span>
+                            <span>Coroutines</span>
+                            <span>Firebase</span>
+                            <span>Google Maps</span>
+                            <span>Clean Architecture</span>
+                        </div>
+                        <a href="#" class="project-link">Detayları Gör <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
-    </div>
-    <div class="content">
-        <h2 id="projects-section">Projects</h2>
-        <div class="photos-wrapper">
-            <div class="project-group">
-                <h3>Meal Planner</h3>
-                <div class="photos-container">
-                    <img src="photos/mp1.png" alt="MP 1" id="mp1" onclick="showMoreMP()">
-                    <img src="photos/mp2.PNG" alt="MP 2" class="hidden mp">
-                    <img src="photos/mp3.PNG" alt="MP 3" class="hidden mp">
-                    <img src="photos/mp4.PNG" alt="MP 4" class="hidden mp">
-                </div>
-                <p class="project-link">Google Play link: <a href="https://play.google.com/store/apps/details?id=com.Meal_Planner&pcampaignid=web_share" target="_blank">From Here</a></p>
-                <p class="project-description">The Meal Planner application allows users to easily create daily and weekly meal plans. With this app, users can receive various recipe suggestions to prepare healthy and balanced meals, create ingredient lists, and organize their meals in a structured way. Additionally, the app includes features like favorite recipes and shopping lists, aiming to speed up and simplify the meal preparation process.</p>
-                <h4>Technologies Used:</h4>
-                <ul class="technologies-used">
-                    <li>Kotlin</li>
-                    <li>Jetpack Compose</li>
-                    <li>ModelView</li>
-                    <li>Retrofit</li>
-                    <li>MVVM</li>
-                    <li>LiveData</li>
-                    <li>Coroutines</li>
-                    <li>Navigation</li>
-                    <li>Hilt</li>
-                    <li>Dagger</li>
-                </ul>
-            </div>
-            <div class="project-group">
-                <h3>Coffee App</h3>
-                <div class="photos-container">
-                    <img src="photos/diablo1.PNG" alt="Diablo 1" id="diablo1" onclick="showMoreDiablo()">
-                    <img src="photos/diablo2.PNG" alt="Diablo 2" class="hidden diablo">
-                    <img src="photos/diablo3.PNG" alt="Diablo 3" class="hidden diablo">
-                    <img src="photos/diablo4.PNG" alt="Diablo 4" class="hidden diablo">
-                </div>
-                <p class="project-link">Google Play link: <a href="https://play.google.com/store/apps/details?id=com.ercin.socialmediaclone&pcampaignid=web_share" target="_blank">From Here</a></p>
-                <p class="project-description">"Coffee App" is a platform where users can access all the information they need about a café in an easy-to-use format. Through the app, users can browse the café's menu, view existing branches, and check out the latest posts on the homepage. The system, which allows users to collect points with every coffee purchase and redeem those points for free coffee, makes the user experience more enjoyable. Additionally, the app's content can be updated through an admin panel, making it easy to manage features such as the menu, branch information, and posts. Coffee App provides a modern solution to the needs of coffee lovers, elevating their coffee experience to the next level every day.</p>
-                <h4>Technologies Used:</h4>
-                <ul class="technologies-used">
-                    <li>Kotlin</li>
-                    <li>Jetpack Compose</li>
-                    <li>ModelView</li>
-                    <li>Retrofit</li>
-                    <li>MVVM</li>
-                    <li>LiveData</li>
-                    <li>Coroutines</li>
-                    <li>Navigation</li>
-                    <li>Hilt</li>
-                    <li>Dagger</li>
-                </ul>
-            </div>
-            <div class="project-group">
-                <h3>PixL - AI Image Generator</h3>
-                <div class="photos-container">
-                    <img src="photos/pixlPhoto.png" alt="PL 1" id="pl1">
-                </div>
-                <p class="project-link">Google Play link: <a href="https://play.google.com/store/apps/details?id=com.ercinak.pixl&pcampaignid=web_share" target="_blank">From Here</a></p>
-                <p class="project-description">PixL is an AI-powered image generation app that allows users to turn their imagination into reality. By simply describing their dream designs with a few words, users can create unique and creative visuals. PixL offers a wide range of art styles and customization options, providing a personalized experience tailored to each user's needs. Whether you're looking to create inspiring, creative content or take your artistic projects to the next level, PixL lets you enjoy limitless creativity!</p>
-                <h4>Technologies Used:</h4>
-                <ul class="technologies-used">
-                    <li>Kotlin</li>
-                    <li>Jetpack Compose</li>
-                    <li>ModelView</li>
-                    <li>Retrofit</li>
-                    <li>MVVM</li>
-                    <li>LiveData</li>
-                    <li>Coroutines</li>
-                    <li>Navigation</li>
-                    <li>Hilt</li>
-                    <li>Dagger</li>
-                    <li>WorkManager</li>
-                    <li>Keystore</li>
-                    <li>Stable Diffusion API</li>
-                    <li>AI</li>
+    </section>
 
-                </ul>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Hakkımda</h2>
+            
+            <div class="about-content">
+                <div class="about-header">
+                    <h3 class="about-name">Ali Erçin Akkaya</h3>
+                    <p class="about-role">Android & Flutter Developer</p>
+                    <p class="about-intro">Mobil uygulama geliştirme alanında uzmanlaşmış bir yazılım geliştiriciyim. Android ve Flutter teknolojileri üzerine yoğunlaşarak, kullanıcı dostu ve performans odaklı uygulamalar geliştiriyorum.</p>
+                </div>
+
+                <div class="experience-cards">
+                    <div class="experience-card android">
+                        <div class="card-header">
+                            <span class="emoji">📱</span>
+                            <h4>Android Geliştirme Deneyimim</h4>
+                        </div>
+                        <p class="experience-duration">2+ yıl deneyim: Java ve Kotlin kullanarak Android uygulamaları geliştiriyorum. Jetpack Compose ve XML ile modern arayüzler tasarlayarak kullanıcı deneyimini ön planda tutuyorum.</p>
+                        <ul class="experience-list">
+                            <li>MVVM ve Clean Architecture: Uygulamalarımı modüler ve ölçeklenebilir olacak şekilde tasarlıyorum.</li>
+                            <li>Jetpack Compose: Android için modern UI bileşenleri geliştiriyorum ve Compose'un esnekliğini en iyi şekilde kullanıyorum.</li>
+                            <li>Dependency Injection: Hilt ve Dagger kullanarak projelerimde bağımlılık yönetimini sağlıyorum.</li>
+                            <li>Network Katmanı: Retrofit, OkHttp ve Coroutines ile veri çekme ve API işlemleri yapıyorum.</li>
+                            <li>Local Storage: Room Database ve SharedPreferences gibi teknolojileri kullanarak verileri yönetiyorum.</li>
+                            <li>Google Play Yayın Süreci: Google Play üzerinde uygulama yayınlama ve güncelleme süreçlerine hakimim.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-card flutter">
+                        <div class="card-header">
+                            <span class="emoji">🚀</span>
+                            <h4>Flutter Geliştirme Deneyimim</h4>
+                        </div>
+                        <p class="experience-duration">1+ yıl deneyim: Flutter ile çapraz platform uygulamaları geliştiriyorum.</p>
+                        <ul class="experience-list">
+                            <li>State Management: BLoC, Cubit ve MobX gibi state yönetim araçlarını kullanarak Flutter projelerinde yönetilebilir kod yapıları oluşturuyorum.</li>
+                            <li>Restful API Entegrasyonu: Dio ve HTTP paketleri ile API işlemleri gerçekleştiriyorum.</li>
+                            <li>Tema Yapılandırma: Flutter'da dinamik tema sistemleri oluşturarak uygulamaların UI/UX tarafını özelleştiriyorum.</li>
+                            <li>Bottom Navigation & SearchBar Kullanımı: Uygulamalarımda kullanıcı deneyimini iyileştirmek için çeşitli navigasyon ve arama bileşenleri ekliyorum.</li>
+                            <li>Firestore & Firebase Authentication: Firebase altyapısını kullanarak kimlik doğrulama ve veri yönetimi işlemlerini gerçekleştiriyorum.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <div class="skills-container">
+                        <span class="skill-tag">Android</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">MVVM</span>
+                        <span class="skill-tag">Clean Architecture</span>
+                        <span class="skill-tag">Jetpack Compose</span>
+                        <span class="skill-tag">REST API</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="modal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <div class="modal-content" id="modal-content"></div>
-    </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>İletişime Geç</h2>
+            <div class="contact-links">
+                <a href="mailto:ercinakkya@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Mail Gönder</span>
+                </a>
+                <a href="https://www.linkedin.com/in/ali-ercin-akkaya/" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/ercinAkkaya" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2024 Ali Erçin Akkaya</p>
+        <div class="container">
+            <p>© 2024 Ali Erçin Akkaya</p>
+            <div class="social-links">
+                <a href="https://github.com/ercinAkkaya"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ali-ercin-akkaya/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>
